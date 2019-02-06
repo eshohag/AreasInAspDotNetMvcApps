@@ -126,6 +126,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Blogs\BlogsAreaRegistration.cs" />
+    <Compile Include="Areas\Blogs\Controllers\BlogController.cs" />
+    <Compile Include="Areas\Transection\Controllers\BkashController.cs" />
+    <Compile Include="Areas\Transection\Controllers\RoketController.cs" />
+    <Compile Include="Areas\Transection\Controllers\TransectionController.cs" />
+    <Compile Include="Areas\Transection\Controllers\UPayController.cs" />
+    <Compile Include="Areas\Transection\TransectionAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -143,6 +150,18 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Blogs\Views\web.config" />
+    <Content Include="Areas\Blogs\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Blogs\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Blogs\Views\Blog\Index.cshtml" />
+    <Content Include="Areas\Blogs\Views\Blog\Discuss.cshtml" />
+    <Content Include="Areas\Transection\Views\web.config" />
+    <Content Include="Areas\Transection\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Transection\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Transection\Views\Bkash\Index.cshtml" />
+    <Content Include="Areas\Transection\Views\Roket\Index.cshtml" />
+    <Content Include="Areas\Transection\Views\UPay\Index.cshtml" />
+    <Content Include="Areas\Transection\Views\Transection\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -171,6 +190,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Blogs\Models\" />
+    <Folder Include="Areas\Transection\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

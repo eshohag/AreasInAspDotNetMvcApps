@@ -16,23 +16,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Areas in ASP.NET MVC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Blogs Area", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Transection Area", "Index", new { area = "Transection", controller = "Transection" })</li>
-                    <li>@Html.ActionLink("Blogs Area", "Index", new { area = "Blogs", controller = "Blog" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Blog", "Index", new { area = "Blogs", controller = "Blog" })</li>
+                    <li>@Html.ActionLink("Discuss", "Discuss", new { area = "Blogs", controller = "Blog" })</li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Areas in ASP.NET MVC</p>
         </footer>
     </div>
 
