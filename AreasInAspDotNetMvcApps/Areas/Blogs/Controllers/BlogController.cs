@@ -1,4 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using AreasInAspDotNetMvcApps.Areas.Blogs.Models;
+using AreasInAspDotNetMvcApps.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace AreasInAspDotNetMvcApps.Areas.Blogs.Controllers
 {
@@ -7,7 +11,10 @@ namespace AreasInAspDotNetMvcApps.Areas.Blogs.Controllers
         // GET: Blogs/Blog/Index
         public ActionResult Index()
         {
-            return View();
+            ApplicationDbContext db = new ApplicationDbContext();
+            List<Blog> blogs = db.Blogs.ToList();
+
+            return View(blogs);
         }
         // GET: Blogs/Blog/Discuss
         public ActionResult Discuss()
